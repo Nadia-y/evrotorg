@@ -1,0 +1,252 @@
+@font-face {
+  font-family: "Arial";
+  src: url("../fonts/arial.eot");
+  src: local("☺"), url("../fonts/arial.woff") format("woff"),
+    url("../fonts/arial.ttf") format("truetype"),
+    url("../fonts/arial.svg") format("svg");
+  font-weight: regular;
+  font-style: normal;
+}
+
+body {
+  padding: 0;
+  margin: 0;
+  /* width: 1300px; */
+  font-family: "Arial";
+}
+
+.container {
+  max-width: 1000px;
+  margin: 0 auto;
+}
+.header__main {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 30px;
+}
+ul,
+li {
+  display: block;
+  padding: 0;
+  margin: 0;
+}
+.menu {
+  display: flex;
+}
+.menu li {
+  margin-right: 20px;
+  font-size: 17px;
+  list-style-type: none;
+  line-height: 77px;
+}
+.menu li a {
+  text-decoration: none;
+  color: black;
+  text-align: center;
+}
+.menu li.active a {
+  color: #8fc641;
+}
+.menu li a:hover {
+  color: #8fc641;
+}
+.promo {
+  background: url(img/fon.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  padding-bottom: 180px;
+  width: auto;
+}
+.promo__title {
+  font-size: 50px;
+  color: #ffffff;
+  text-align: center;
+  padding: 130px 35px 0 390px;
+  font-weight: 500;
+  line-height: 55px;
+}
+.promo__button {
+  display: block;
+  margin: 0 205px 0 auto;
+  width: 250px;
+  height: 75px;
+  background-color: #99c50a;
+  border: none;
+  color: #ffffff;
+  font-family: "Roboto", sans-serif;
+  font-size: 36px;
+  padding: 0;
+  border-radius: 10px;
+  cursor: pointer;
+}
+.icons {
+  margin: 35px;
+  display: flex;
+  justify-content: space-around;
+}
+
+.icons__main-group {
+  display: flex;
+  align-items: center;
+  padding: 25px;
+}
+.icon-text {
+  font-size: 12.65px;
+  color: #6a522d;
+  line-height: 15.82px;
+}
+.icon-img {
+  margin-right: 15px;
+}
+.description__bag-text {
+  font-size: 22px;
+  color: #000000;
+  line-height: 24.64px;
+  margin-bottom: 15px;
+}
+.left {
+  margin-left: 20px;
+}
+.description__bag {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+  margin-bottom: 20px;
+}
+.right {
+  margin-right: 20px;
+}
+
+footer {
+  background-color: #888888;
+  padding: 15px 0 30px;
+}
+.footer-menu li a {
+  color: white;
+}
+.footer-menu li {
+  font-size: 15px;
+}
+.contacts__rights {
+  color: white;
+  font-size: 17px;
+  line-height: 25.12px;
+  margin: 0px;
+}
+
+.menu-open {
+  background-color: #8fc641;
+  width: 40px;
+  height: 40px;
+  border: none;
+  display: none;
+}
+.header .show-menu {
+  display: block;
+  position: absolute;
+  background: rgba(0, 0, 0, 0.4);
+  left: 0;
+  top: 0;
+  width: 50%;
+  padding: 105px 20px 0px 40px;
+}
+.header .show-menu li a {
+  color: #ffffff;
+  font-size: 24px;
+}
+
+.hide-title {
+  position: relative;
+  top: 350px;
+}
+.backgr {
+  padding-bottom: 350px;
+}
+
+
+@media screen and (max-width: 1024px) {
+  .container {
+    width: 85%;
+  }
+  .menu li a {
+    font-size: 14px;
+  }
+  .promo {
+    width: 100%;
+  }
+  .description__food-img {
+    width: 100%;
+  }
+  .promo__title {
+    padding: 0px 35px;
+  }
+  .promo__button {
+    margin: 0 auto;
+  }
+  .description__bag {
+    align-items: center;
+  }
+  .icons__main-group {
+    display: block;
+  }
+  .icon-img {
+    display: block;
+    margin: 0 auto;
+  }
+  .menu li {
+    line-height: 47px;
+  }
+
+  @media screen and (max-width: 992px) {
+    .logo__img {
+      position: absolute;
+      top: 5px;
+    }
+    .description__bag {
+      display: block;
+    }
+    .description__bag-img {
+      display: block;
+      margin: 0 auto;
+      width: 100%;
+    }
+    .left {
+      margin-left: 0;
+    }
+
+    .promo__title {
+      /* background: rgba(0, 0, 0, 0.6); */
+      background-color: #8fc641;
+    }
+  }
+  @media screen and (max-width: 767px) {
+    .menu {
+      display: none;
+    }
+    .menu-open {
+      display: block;
+    }
+    .icons {
+      display: block;
+    }
+    .promo__title {
+      font-size: 36px;
+      color: white;
+    }
+    .promo__button {
+      width: 180px;
+      height: 40px;
+      font-size: 24px;
+    }
+  }
+}
+@media screen and (max-width: 480px) {
+  .icon-text {
+    font-size: 18px;
+    text-align: center;
+  }
+  .description__bag-text {
+    text-align: center;
+  }
+}
